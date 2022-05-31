@@ -1,0 +1,36 @@
+WindowManager:
+    Primeira:
+    Segunda:
+
+<Primeira>:
+    name: "primeira"
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            text: "Proxima tela"
+            font_size: 32
+
+        Button:
+            text: "Proxima tela"
+            font_size: 32
+            on_release: app.root.current = "Segunda"
+            
+
+<Segunda>:
+    name: "Segunda"
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            text: "Segunda tela"
+            font_size: 32
+
+        Button:
+            text: "Volte"
+            font_size: 32
+            on_release: app.root.current = "primeira"
