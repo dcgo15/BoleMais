@@ -1,0 +1,115 @@
+Janela:
+    Inicio:
+    Calcul:
+    Boletim:
+
+<Inicio>:
+    name: "Bole+"
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        cols: 2
+
+        Label:
+            text: "BOLE+"
+            font_size: 45
+            bold: True
+            font_name: "Roboto-BoldItalic"
+
+        Button:
+            text: "Calcular Nota"
+            font_size: 36
+            size_hint:0.5, 0.2
+            pos_hint: {"right":0.75, "top": 1}
+            on_release: app.root.current = "Calcular"
+
+        Button:
+            text: "Ver Boletim"
+            font_size: 36
+            size_hint:0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+            on_release: app.root.current = "Nota"
+
+<Calcul>:
+    name: "Calcular"
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            text: "Calcular a Nota"
+            font_size: 45
+            bold: True
+            font_name: "Roboto-BoldItalic"
+
+        TextInput:
+            text: "Digite o minimo de pontos para passar"
+            size_hint: 0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+            
+        TextInput:
+            text: "Quantos voce tem"
+            size_hint: 0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+
+        Button:
+            text: "Salvar"
+            font_size: 36
+            size_hint:0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+            
+        Button:
+            text: "Voltar"
+            font_size: 36
+            size_hint:0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+            on_release: app.root.current = "Bole+"
+
+<Boletim>:
+    name: "Nota"
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            text: "Boletim"
+            font_size: 45
+            bold: True
+            font_name: "Roboto-BoldItalic"
+
+        TextInput:
+            text: "Materia"
+            size_hint: 0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+            
+        TextInput:
+            text: "Nota 1 Ciclo"
+            size_hint: 0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+            
+        TextInput:
+            text: "Nota 2 Ciclo"
+            size_hint: 0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+
+        TextInput:
+            text: "Nota 3 Ciclo"
+            size_hint: 0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+
+        Button:
+            text: "Adicionar"
+            font_size: 36
+            size_hint:0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+            
+        Button:
+            text: "Voltar"
+            font_size: 36
+            size_hint:0.5, 0.2
+            pos_hint: {"right":0.75, "top": 0.5}
+            on_release: app.root.current = "Bole+"
+    
