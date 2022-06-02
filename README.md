@@ -7,8 +7,11 @@ Bem ... O Bole+ é um programa em python para você calcular sua nota e saber ma
 ***AINDA EM FASE DE TESTES****
 
 FUNÇÕES IMPORTANTES A SER ADICIONADAS:
+
 -Melhorias no layout
+
 -Integração com o excel para criação do boletim através do PANDAS
+
 -Notas para serem multiplicadas, por isso deve-se adicionar as notas já multiplicadas
 
 #PrimeirosPassos
