@@ -11,7 +11,7 @@ FUNÇÕES IMPORTANTES A SER ADICIONADAS:
 -Integração com o excel para criação do boletim através do PANDAS
 -Notas para serem multiplicadas, por isso deve-se adicionar as notas já multiplicadas
 
-#Primeiros Passos
+#PrimeirosPassos
 
 ![image](https://user-images.githubusercontent.com/76263577/171697610-0ff8fc4d-00f6-4f4e-8065-7b08d7d40704.png)
 
@@ -25,7 +25,7 @@ Na parte de calcular existem dois campos: O primeiro Campo , você digita o tota
 
 No segundo campo você digita o valor de pontos que possui durante o ano. Ex: 1 ciclo: 10, 2 ciclo: 12, total = 22 .
 
-#Ver Boletim
+#VerBoletim
 
 ![image](https://user-images.githubusercontent.com/76263577/171698514-7fbdfde1-57c0-4d85-96f6-beaccf7270b2.png)
 
