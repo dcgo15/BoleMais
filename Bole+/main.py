@@ -28,3 +28,6 @@ class BoleMais(App):
 
 if __name__ == "__main__":
     BoleMais().run()
+
+#text: "Digite o minimo de pontos para passar"
+#text: "Quantos voce tem"

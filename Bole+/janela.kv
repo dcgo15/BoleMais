@@ -44,21 +44,39 @@ Janela:
             bold: True
             font_name: "Roboto-BoldItalic"
 
+        Label:
+            text: "Digite o minimo de pontos para passar:"
+            size_hint: 1.0, 1.0
+            halign: "left"
+            valign: "middle"
+
         TextInput:
-            text: "Digite o minimo de pontos para passar"
+            id: Num
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
+            multiline: False
+            valign: "middle"
+
+        Label:
+            text: "Quantos pontos voce tem:"
+            size_hint: 1.0, 1.0
+            halign: "left"
+            valign: "middle"
+            
             
         TextInput:
-            text: "Quantos voce tem"
+            id: Ndois
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
+            multiline: False
+
 
         Button:
-            text: "Salvar"
+            text: "Calcular"
             font_size: 36
             size_hint:0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
+            on_press: print(float(Num.text) - float(Ndois.text))
             
         Button:
             text: "Voltar"
@@ -81,30 +99,38 @@ Janela:
             font_name: "Roboto-BoldItalic"
 
         TextInput:
-            text: "Materia"
+            id: Materia
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
+            multiline: False
             
         TextInput:
-            text: "Nota 1 Ciclo"
+            id: Nota1
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
+            multiline: False
+        
             
         TextInput:
-            text: "Nota 2 Ciclo"
+            id: Nota2
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
+            multiline: False
+            
 
         TextInput:
-            text: "Nota 3 Ciclo"
+            id: Nota3
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
+            multiline: False
+            
 
         Button:
             text: "Adicionar"
             font_size: 36
             size_hint:0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
+            on_press: print((Materia.text), float(Nota1.text), float(Nota2.text), float(Nota3.text), "Total:", float(Nota1.text) + float(Nota2.text) + float(Nota3.text))
             
         Button:
             text: "Voltar"
