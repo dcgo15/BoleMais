@@ -10,6 +10,13 @@ Janela:
         orientation: "vertical"
         size: root.width, root.height
         cols: 2
+        spacing: 50
+
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'numeros.jpg'
 
         Label:
             text: "BOLE+"
@@ -21,15 +28,23 @@ Janela:
             text: "Calcular Nota"
             font_size: 36
             size_hint:0.5, 0.2
-            pos_hint: {"right":0.75, "top": 1}
+            pos_hint: {"right":0.75, "top": 6}
             on_release: app.root.current = "Calcular"
+            background_color: 0, 0, 0
 
         Button:
             text: "Ver Boletim"
             font_size: 36
             size_hint:0.5, 0.2
-            pos_hint: {"right":0.75, "top": 0.5}
+            pos_hint: {"right":0.75, "top": 1}
             on_release: app.root.current = "Nota"
+            background_color: 0, 0, 0
+
+        Label:
+            size_hint: 1.0, 0.3
+            halign: "left"
+            valign: "middle"
+
 
 <Calcul>:
     name: "Calcular"
@@ -37,6 +52,13 @@ Janela:
     BoxLayout:
         orientation: "vertical"
         size: root.width, root.height
+        spacing: 5
+
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'numeros.jpg'
 
         Label:
             text: "Calcular a Nota"
@@ -46,9 +68,10 @@ Janela:
 
         Label:
             text: "Digite o minimo de pontos para passar:"
-            size_hint: 1.0, 1.0
+            size_hint: 1.0, 0.3
             halign: "left"
             valign: "middle"
+            bold: True
 
         TextInput:
             id: Num
@@ -59,9 +82,10 @@ Janela:
 
         Label:
             text: "Quantos pontos voce tem:"
-            size_hint: 1.0, 1.0
+            size_hint: 1.0, 0.3
             halign: "left"
             valign: "middle"
+            bold: True
             
             
         TextInput:
@@ -70,20 +94,32 @@ Janela:
             pos_hint: {"right":0.75, "top": 0.5}
             multiline: False
 
+        Label:
+            size_hint: 1.0, 0.3
+            halign: "left"
+            valign: "middle"
+
 
         Button:
             text: "Calcular"
-            font_size: 36
+            font_size: 25
             size_hint:0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
             on_press: print(float(Num.text) - float(Ndois.text))
+            background_color: 0, 0, 0
+
+        Label:
+            size_hint: 1.0, 0.2
+            halign: "left"
+            valign: "middle"
             
         Button:
             text: "Voltar"
-            font_size: 36
-            size_hint:0.5, 0.2
-            pos_hint: {"right":0.75, "top": 0.5}
+            font_size: 25
+            size_hint:0.2, 0.2
+            pos_hint: {"right":0.2, "top": 0.5}
             on_release: app.root.current = "Bole+"
+            background_color: 0, 0, 0
 
 <Boletim>:
     name: "Nota"
@@ -91,6 +127,13 @@ Janela:
     BoxLayout:
         orientation: "vertical"
         size: root.width, root.height
+        spacing: 5
+
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'numeros.jpg'
 
         Label:
             text: "Boletim"
@@ -98,17 +141,38 @@ Janela:
             bold: True
             font_name: "Roboto-BoldItalic"
 
+        Label:
+            text: "Materia:"
+            size_hint: 1.0, 0.3
+            halign: "left"
+            valign: "top"
+            bold: True
+
         TextInput:
             id: Materia
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
             multiline: False
+
+        Label:
+            text: "Nota 1 ciclo:"
+            size_hint: 1.0, 0.3
+            halign: "left"
+            valign: "middle"
+            bold: True
             
         TextInput:
             id: Nota1
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
             multiline: False
+
+        Label:
+            text: "Nota 2 ciclo:"
+            size_hint: 1.0, 0.3
+            halign: "left"
+            valign: "middle"
+            bold: True
         
             
         TextInput:
@@ -116,7 +180,13 @@ Janela:
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
             multiline: False
-            
+
+        Label:
+            text: "Nota 3 ciclo:"
+            size_hint: 1.0, 0.3
+            halign: "left"
+            valign: "middle"
+            bold: True
 
         TextInput:
             id: Nota3
@@ -127,15 +197,23 @@ Janela:
 
         Button:
             text: "Adicionar"
-            font_size: 36
-            size_hint:0.5, 0.2
+            font_size: 25
+            size_hint:0.5, 0.4
             pos_hint: {"right":0.75, "top": 0.5}
             on_press: print((Materia.text), float(Nota1.text), float(Nota2.text), float(Nota3.text), "Total:", float(Nota1.text) + float(Nota2.text) + float(Nota3.text))
+            background_color: 0, 0, 0
+
+        Label:
+            size_hint: 1.0, 0.3
+            halign: "left"
+            valign: "middle"
+            
             
         Button:
             text: "Voltar"
-            font_size: 36
-            size_hint:0.5, 0.2
-            pos_hint: {"right":0.75, "top": 0.5}
+            font_size: 25
+            size_hint:0.2, 0.4
+            pos_hint: {"right":0.2, "top": 0.5}
             on_release: app.root.current = "Bole+"
+            background_color: 0, 0, 0
     
