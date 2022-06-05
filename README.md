@@ -16,13 +16,13 @@ FUNÇÕES IMPORTANTES A SER ADICIONADAS:
 
 #PrimeirosPassos
 
-![image](https://user-images.githubusercontent.com/76263577/171697610-0ff8fc4d-00f6-4f4e-8065-7b08d7d40704.png)
+![image](https://user-images.githubusercontent.com/76263577/172056485-3306ce86-9e49-41b0-8d63-b95290fdf175.png)
 
 Existem dois Botões: Calcular e Ver Boletim
 
 #Calculando
 
-![image](https://user-images.githubusercontent.com/76263577/171697887-cf521d37-db5f-40cd-9909-d19418839117.png)
+![image](https://user-images.githubusercontent.com/76263577/172056499-40f6a712-a484-444e-9347-ab5ef6b5c1ed.png)
 
 Na parte de calcular existem dois campos: O primeiro Campo , você digita o total de pontos para passar de ano . Ex: 60
 
@@ -30,7 +30,7 @@ No segundo campo você digita o valor de pontos que possui durante o ano. Ex: 1 
 
 #VerBoletim
 
-![image](https://user-images.githubusercontent.com/76263577/171698514-7fbdfde1-57c0-4d85-96f6-beaccf7270b2.png)
+![image](https://user-images.githubusercontent.com/76263577/172056514-027d6565-e637-44eb-8951-227763578dff.png)
 
 Em ver boletim tem 4 campos ***INCOMPLETOS***: Materia , Nota do 1 ciclo, Nota do 2 ciclo, Nota do 3 ciclo
 
