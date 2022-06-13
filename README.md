@@ -6,14 +6,6 @@ App para saber sua nota na escola
 Bem ... O Bole+ é um programa em python para você calcular sua nota e saber mais sobre seu boletim
 ***AINDA EM FASE DE TESTES****
 
-FUNÇÕES IMPORTANTES A SER ADICIONADAS:
-
--[x]Melhorias no layout
-
--[]Integração com o excel para criação do boletim através do PANDAS
-
--[]Notas para serem multiplicadas, por isso deve-se adicionar as notas já multiplicadas
-
 #PrimeirosPassos
 
 ![image](https://user-images.githubusercontent.com/76263577/172056485-3306ce86-9e49-41b0-8d63-b95290fdf175.png)
