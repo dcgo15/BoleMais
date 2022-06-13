@@ -28,4 +28,4 @@ Em ver boletim tem 4 campos ***INCOMPLETOS***: Materia , Nota do 1 ciclo, Nota d
 
 Somente insira as notas e clique em adicionar , voalá , automaticamente aparecerá em seu cmd ou shell
 
-***No botao de adicionar , vou inserir a funçao de criar uma tabela no EXCEL***
+***No botao de adicionar , voce vera suas notas no shell***
