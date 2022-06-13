@@ -2,6 +2,8 @@ Janela:
     Inicio:
     Calcul:
     Boletim:
+    
+    
 
 <Inicio>:
     name: "Bole+"
@@ -74,7 +76,7 @@ Janela:
             bold: True
 
         TextInput:
-            id: Num
+            id: num
             size_hint: 0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
             multiline: False
@@ -101,14 +103,17 @@ Janela:
 
 
         Button:
+            id: calc
             text: "Calcular"
             font_size: 25
             size_hint:0.5, 0.2
             pos_hint: {"right":0.75, "top": 0.5}
-            on_press: print(float(Num.text) - float(Ndois.text))
             background_color: 0, 0, 0
+            on_press: print("Seu resultado é:",float(num.text) - float(Ndois.text))
+            
 
         Label:
+            id: Resultado
             size_hint: 1.0, 0.2
             halign: "left"
             valign: "middle"
@@ -120,6 +125,7 @@ Janela:
             pos_hint: {"right":0.2, "top": 0.5}
             on_release: app.root.current = "Bole+"
             background_color: 0, 0, 0
+
 
 <Boletim>:
     name: "Nota"
@@ -200,8 +206,9 @@ Janela:
             font_size: 25
             size_hint:0.5, 0.4
             pos_hint: {"right":0.75, "top": 0.5}
-            on_press: print((Materia.text), float(Nota1.text), float(Nota2.text), float(Nota3.text), "Total:", float(Nota1.text) + float(Nota2.text) + float(Nota3.text))
+            on_release:
             background_color: 0, 0, 0
+            on_press: print(str(Materia.text), float(Nota1.text),float(Nota2.text),float(Nota3.text))
 
         Label:
             size_hint: 1.0, 0.3
